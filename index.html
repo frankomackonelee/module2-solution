@@ -43,7 +43,7 @@
                </button>
            </li>
          </ol>
-       <div class="emptyMessage" ng-show="showList.allBought()">Everything is bought!</div>
+       <div class="emptyMessage" ng-if="showList.allBought()">Everything is bought!</div>
 
       </div>
 
@@ -55,7 +55,7 @@
              {{ item.product }} {{ item.quantity }}
          </li>
        </ul>
-       <div class="emptyMessage" ng-show="boughtList.noneBought()">Nothing bought yet.</div>
+       <div class="emptyMessage" ng-if="boughtList.noneBought()">Nothing bought yet.</div>
       </div>
     </div>
   </div>
